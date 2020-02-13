@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_screen" />
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/header_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_labelmin"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="@dimen/text_labelmax"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="10dp"
+            android:text="About Puffizza"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_labelmin"
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        android:text="Puffizza, as the name suggests is a concept of Puff + Pizza. Yes, it is the only place in India which offers pizza with Puff Base. This unique combination of pizza on a puff base will melt in your mouth and give your taste buds an experience like never before. Mr. Dipen Patel who manages Puffizza has tried countless pizza places across the world. After years of experiments and trials he comes up with this UNIQUE proposal. In order to establish the name ‘Puffizza’ commendable, he makes sure that each item available here including Garlic Bread, Pizzas, Pastas and Dessert comes with the puff touch." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/text_labelmin"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_cover_height"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/text_labelsml"
+                    android:layout_gravity="center"
+                    android:src="@drawable/puffizza_ambiance1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/text_labelsml"
+                    android:layout_gravity="center"
+                    android:src="@drawable/puffizza_ambiance2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_cover_height"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/text_labelsml"
+                    android:layout_gravity="center"
+                    android:src="@drawable/puffizza_ambiance3" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/text_labelsml"
+                    android:layout_gravity="center"
+                    android:src="@drawable/puffizza_ambiance4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

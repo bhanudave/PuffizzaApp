@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/splash_screen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_labelmin"
+                android:layout_below="@+id/header"
+                android:layout_above="@+id/commitment_txt"
+                android:layout_marginBottom="@dimen/text_labelsml"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="10dp"
+                    android:text="Puffizza Branch"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_labelmin"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/text_labelmin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/address1_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/home"
+                            android:gravity="right"
+                            android:padding="@dimen/text_labellow"
+                            android:drawableTint="@color/white"
+                            android:textColor="@color/white"
+                            android:text="103 - 104, Kairos, Near Manav Mandir, Drive In Road, Ahmedabad - 380052"
+                            android:textSize="@dimen/text_labelmin" />
+
+                        <TextView
+                            android:id="@+id/call1_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/phone_call"
+                            android:gravity="right"
+                            android:padding="@dimen/text_labellow"
+                            android:drawableTint="@color/white"
+                            android:textColor="@color/white"
+                            android:text="     07940085000"
+                            android:textSize="@dimen/text_labelmin" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/text_labelmin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/address2_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/home"
+                            android:gravity="right"
+                            android:padding="@dimen/text_labellow"
+                            android:drawableTint="@color/white"
+                            android:textColor="@color/white"
+                            android:text="FF 101, Trinity, Zydus Hospital Road, Thaltej,(0.66 mi) Ahmedabad - 380059"
+                            android:textSize="@dimen/text_labelmin" />
+
+                        <TextView
+                            android:id="@+id/call2_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/phone_call"
+                            android:gravity="right"
+                            android:padding="@dimen/text_labellow"
+                            android:drawableTint="@color/white"
+                            android:textColor="@color/white"
+                            android:text="     07948900571"
+                            android:textSize="@dimen/text_labelmin" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="10dp"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_labelmin"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/email"/>
+
+                    <TextView
+                        android:id="@+id/email_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:padding="@dimen/text_labellow"
+                        android:layout_weight="1"
+                        android:drawableTint="@color/white"
+                        android:textColor="@color/white"
+                        android:text="info@puffizza.com"
+                        android:textSize="@dimen/text_labelmin" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="10dp"
+                    android:text="Social Media"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/text_labelmin"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/facebook_link_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/facebook"
+                        android:gravity="center"
+                        android:padding="@dimen/text_labellow"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="Facebook"
+                        android:textSize="@dimen/text_labelmin" />
+
+                    <TextView
+                        android:id="@+id/instagram_link_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/instagram"
+                        android:gravity="center"
+                        android:padding="@dimen/text_labellow"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="Instagram"
+                        android:textSize="@dimen/text_labelmin" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commitment_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/text_labellow"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:layout_above="@+id/bottomimage_layout"
+                android:text="Our Commitment"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/bottomimage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_labelmax"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/text_labelsml"
+                android:paddingRight="@dimen/text_labelsml"
+                android:background="@color/text_hint_color"
+                android:layout_above="@+id/bottom_layout"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fancy1"
+                    android:layout_gravity="center"
+                    android:tint="@color/text_bg_color"
+                    android:padding="@dimen/text_labelsml"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fancy2"
+                    android:layout_gravity="center"
+                    android:tint="@color/text_bg_color"
+                    android:padding="@dimen/text_labelsml"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fancy3"
+                    android:layout_gravity="center"
+                    android:tint="@color/text_bg_color"
+                    android:padding="@dimen/text_labelsml"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fancy4"
+                    android:layout_gravity="center"
+                    android:tint="@color/text_bg_color"
+                    android:padding="@dimen/text_labelsml"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_above="@+id/bottom_view"
+                android:paddingLeft="@dimen/text_labelsml"
+                android:paddingRight="@dimen/text_labelsml"
+                android:background="@color/text_hint_color"
+                android:layout_marginBottom="@dimen/text_labelmin"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="5" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/textcolor"
+                        android:text="Fresh Ingedients" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/text_bg_color"
+                        android:text="Our ingredients are handcrafted special, domestic, organic and always fresh." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="5" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/textcolor"
+                        android:text="Not Just Pizza" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/text_bg_color"
+                        android:text="Not only pizza, but our Bread, Pasta &amp; Dessert are delicious too!" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="5" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/textcolor"
+                        android:text="Great Service" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/text_bg_color"
+                        android:text="we promise to provide the best services." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="5" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/textcolor"
+                        android:text="Fast Delivery" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:textSize="@dimen/text_labelsml"
+                        android:textColor="@color/text_bg_color"
+                        android:text="Order by telephone or over the internet and your delicious pizza is on the way!" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="@dimen/image_margin1" />
+
+        </LinearLayout>
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_screen" />-->
+
+</ScrollView>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Puffizza</string>
+    <string name="title_shop">Home</string>
+    <string name="title_gifts">Menu</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_forgot">Forgot</string>
+    <string name="title_about">About Us</string>
+    <string name="title_contact">Contact Us</string>
+    <string name="title_logout">Logout</string>
+
+    <!--Menu String-->
+    <string name="bread">BREAD</string>
+    <string name="pasta">PASTA</string>
+    <string name="pizza">PIZZA</string>
+    <string name="desert">DESSERT</string>
+    <string name="dips">DIPS</string>
+    <string name="beverages">BEVERAGES</string>
+
+    <!--Submenu String-->
+    <string name="sub_bread1">Garlic Herb Bread\n(4 Pieces of Bread with Garlic)</string>
+    <string name="sub_bread2">Cheesy Garlic Bread\n(4 Pieces of Bread with Cheese, Garlic &amp; Herbs)</string>
+    <string name="sub_bread3">Cheesy Puffy Garlic Bread\n(4 Pieces of Puffy Bread with Cheese, Garlic &amp; Herbs)</string>
+    <string name="sub_bread4">Jain Cheesy Puffy Bread\n(4 Pieces of Puffy Bread with Cheese &amp; Herbs)</string>
+    <string name="sub_bread5">Cheesy Supreme Bread\n(4 Pieces of Bread with Olive Oil, Cheese, Herbs and finely Chopped Vegetables)</string>
+    <string name="sub_bread6">Cheesy Puffy Supreme Bread\n(4 Pieces of Puffy Bread with Olive Oil, Cheese, Herbs and finely Chopped Vegetables)</string>
+    <string name="sub_bread7">Tomato, Basil &amp; Pesto Bread\n(4 Pieces of Bread with Authentic Pesto Sauce, Tomato Slice, Basil &amp; Oregano)</string>
+    <string name="sub_bread8">Tomato, Basil &amp; Pesto Puffy Bread\n(4 Pieces of Pu y Bread with Authentic Pesto Sauce, Tomato Slice, Basil &amp; Oregano)</string>
+    <string name="sub_bread9">Sun Dried Tomato &amp; Feta Bread\n(4 Pieces of Bread with Cheese, Sun Dried Tomatoes &amp; Feta)</string>
+    <string name="sub_bread10">Sun Dried Tomato &amp; Feta Puffy Bread\n(4 Pieces of Puffy Bread with Cheese, Sun Dried Tomatoes &amp; Feta)</string>
+
+    <string name="sub1_bread1">Cheesy Red Sauce Pasta In Puff Bowl\n(Mixture of Pasta Sauce and Cheese Sauce with Spinach, Capsicum, Onion, Olives and Black Pepper)</string>
+    <string name="sub1_bread2">Cheesy White Sauce Pasta In Puff Bowl\n(Rich Cheese Sauce with Spinach, Tomato, Onion, Fresh Mushroom, Black Pepper &amp; Oregano)</string>
+    <string name="sub1_bread3">Pesto Pasta In Puff Bowl\n(Enjoy the Flavour of Authentic Pesto Sauce)</string>
+
+    <string name="sub2_bread1">Single Cheesy Margherita\n(Pizza Sauce &amp; Just a Right Amount of Cheese)</string>
+    <string name="sub2_bread2">Cheese &amp; Onion\n(Pizza Sauce, Cheese &amp; Onion)</string>
+    <string name="sub2_bread3">Italian Treat\n(Pizza Sauce, Cheese, Onion, Capsicum &amp; Oregano)</string>
+    <string name="sub2_bread4">Tomonion\n(Pizza Sauce, Cheese, Tomato, Onion &amp; Oregano)</string>
+    <string name="sub2_bread5">The Sweet Flame\n(Pizza Sauce, Cheese, Pineapple, Jalapeno &amp; Chilli Flakes)</string>
+    <string name="sub2_bread6">Double Cheesy Margherita\n(Pizza Sauce &amp; Double Amount of Cheese)</string>
+    <string name="sub2_bread7">Fire Lovers\n(Pizza Sauce, Cheese, Tomato, Onion, Capsicum, Jalapeno &amp; Chilli Flakes)</string>
+    <string name="sub2_bread8">American Touch\n(Pizza Sauce, Cheese, Tomato, Capsicum, Fresh Mushroom, Olives &amp; Oregano)</string>
+    <string name="sub2_bread9">Caprese Pizza\n(Pizza Sauce, Cheese, Tomato Slice, Feta, Basil, Black Pepper &amp; Oregano)</string>
+    <string name="sub2_bread10">Super Supreme\n(Pizza Sauce, Cheese, Tomato, Capsicum, Fresh Mushroom, Pineapple, Olives, Red Paprika, Oregano &amp; Chilli Flakes)</string>
+    <string name="sub2_bread11">The Lot\n(Pizza Sauce, Cheese, Onion, Tomato, Capsicum, Fresh Mushroom, Pineapple, Jalapeno, Oregano &amp; Chilli Flakes)</string>
+    <string name="sub2_bread12">Farm Fresh\n(Pizza Sauce, Cheese, Sun Dried Tomatoes, Spinach, Onion, Capsicum, Fresh Mushroom &amp; Oregano)</string>
+    <string name="sub2_bread13">BBQ Paneer\n(BBQ Sauce, Cheese, Onion &amp; Peri-Peri Paneer)</string>
+    <string name="sub2_bread14">Spicy Paneer\n(Pizza Sauce, Cheese, Capsicum, Jalapeno &amp; Peri-Peri Paneer)</string>
+    <string name="sub2_bread15">Peri Peri Paneer\n(Pizza Sauce with Harissa Mayo, Basil, Tomato, Peri-Peri Paneer &amp; Black Pepper)</string>
+    <string name="sub2_bread16">Peri Peri Mushroom\n(Pizza Sauce with Harissa Mayo, Onion, Olives &amp; Peri-Peri Mushroom)</string>
+    <string name="sub2_bread17">Chunky Bocconcini\n(Pizza Sauce, Cheese, Sun Dried Tomato, Onion, Olives &amp; Bocconcini Cheese)</string>
+    <string name="sub2_bread18">Five Cheese\n(Pizza Sauce, Cheddar Cheese, Mozzarella Cheese, Feta Cheese, Bocconcini Cheese, Liquid Cheese)</string>
+    <string name="sub2_bread19">Pizza Al Pesto\n(Authentic Pesto Sauce, Cheese, Olives, Fresh Mushroom &amp; Oregano)</string>
+    <string name="sub2_bread20">Tomato Basil &amp; Pesto Pizza\n(Authentic Pesto Sauce, Cheese, Basil, Tomato Slice &amp; Oregano)</string>
+
+    <string name="sub3_bread1">Puffy Scotch</string>
+    <string name="sub3_bread2">Chocolate Volcano</string>
+    <string name="sub3_bread3">Chocolate Brownie</string>
+    <string name="sub3_bread4">Caramel Brownie</string>
+
+    <string name="sub4_bread1">Harissa Mayo Dip</string>
+    <string name="sub4_bread2">Cheesy Jalapeno Dip</string>
+    <string name="sub4_bread3">Peri-Peri Dip</string>
+    <string name="sub4_bread4">Cheese Dips</string>
+
+    <string name="sub5_bread1">Water 1lt</string>
+    <string name="sub5_bread2">300 ML Coke</string>
+    <string name="sub5_bread3">300 ML Sprite</string>
+    <string name="sub5_bread4">Lemon Ice Tea</string>
+    <string name="sub5_bread5">Peach Ice Tea</string>
+    <string name="sub5_bread6">Mint Beer</string>
+    <string name="sub5_bread7">Peach Beer</string>
+    <string name="sub5_bread8">Cranberry Beer</string>
+
+    <!--price string-->
+    <string name="price19">19</string>
+    <string name="price35">35</string>
+    <string name="price40">40</string>
+    <string name="price60">60</string>
+    <string name="price70">70</string>
+    <string name="price80">80</string>
+    <string name="price90">90</string>
+    <string name="price110">110</string>
+    <string name="price119">119</string>
+    <string name="price130">130</string>
+    <string name="price150">150</string>
+    <string name="price170">170</string>
+    <string name="price190">190</string>
+    <string name="price200">200</string>
+    <string name="price210">210</string>
+    <string name="price220">220</string>
+    <string name="price250">250</string>
+    <string name="price280">280</string>
+    <string name="price300">300</string>
+    <string name="price350">350</string>
+    <string name="price370">370</string>
+
+</resources>
