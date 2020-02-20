@@ -9,6 +9,8 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -191,6 +193,8 @@ public class MenuFragment extends Fragment {
             holder.decription.setVisibility(View.GONE);
             holder.price.setVisibility(View.GONE);
 
+            animate(holder);
+
             Glide.with(context)
                     .load(array_image.get(position))
                     .into(holder.thumbnail);
@@ -214,6 +218,11 @@ public class MenuFragment extends Fragment {
         @Override
         public int getItemCount() {
             return 6;
+        }
+
+        public void animate(RecyclerView.ViewHolder viewHolder) {
+            final Animation animAnticipateOvershoot = AnimationUtils.loadAnimation(context, R.anim.anticipate_overshoot_interpolator);
+            viewHolder.itemView.setAnimation(animAnticipateOvershoot);
         }
     }
 }

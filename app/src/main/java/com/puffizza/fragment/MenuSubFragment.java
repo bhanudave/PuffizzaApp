@@ -9,6 +9,8 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -205,6 +207,8 @@ public class MenuSubFragment extends Fragment {
 //            final Menu movie = movieList.get(position);
             holder.name.setText(sub_title.get(position));
 
+            animate(holder);
+
 //            holder.decription.setText(description.get(position));
             holder.price.setText(price.get(position));
 //            holder.thumbnail.setImageResource(R.drawable.peri_peri_mashroom);
@@ -217,6 +221,11 @@ public class MenuSubFragment extends Fragment {
         @Override
         public int getItemCount() {
             return 10;
+        }
+
+        public void animate(RecyclerView.ViewHolder viewHolder) {
+            final Animation animAnticipateOvershoot = AnimationUtils.loadAnimation(context, R.anim.anticipate_overshoot);
+            viewHolder.itemView.setAnimation(animAnticipateOvershoot);
         }
     }
 }

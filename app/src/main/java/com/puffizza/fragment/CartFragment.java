@@ -9,6 +9,8 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -220,6 +222,8 @@ public class CartFragment extends Fragment {
             holder.name.setText(movie.getTitle());
             holder.price.setText(movie.getPrice());
 
+            animate(holder);
+
             Glide.with(context)
                     .load(array_image.get(position))
                     .into(holder.thumbnail);  //movie.getImage()
@@ -228,6 +232,11 @@ public class CartFragment extends Fragment {
         @Override
         public int getItemCount() {
             return movieList.size();
+        }
+
+        public void animate(RecyclerView.ViewHolder viewHolder) {
+            final Animation animAnticipateOvershoot = AnimationUtils.loadAnimation(context, R.anim.anticipate_overshoot);
+            viewHolder.itemView.setAnimation(animAnticipateOvershoot);
         }
     }
 }
