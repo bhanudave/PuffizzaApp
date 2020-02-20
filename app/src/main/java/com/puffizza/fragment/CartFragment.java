@@ -82,7 +82,9 @@ public class CartFragment extends Fragment {
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
+        mAdapter.notifyDataSetChanged();
         recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.scheduleLayoutAnimation();
 
         fetchStoreItems();
 
