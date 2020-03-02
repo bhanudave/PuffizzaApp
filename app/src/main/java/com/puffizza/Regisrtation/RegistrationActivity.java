@@ -24,6 +24,8 @@ import com.puffizza.retrofit.UserService;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.regex.Pattern;
 
+import static com.puffizza.Utills.utills.EMAIL_ADDRESS_PATTERN;
+
 public class RegistrationActivity extends Activity {
 
     private EditText edtUserfirstname,edtUserlastname,edtUseremail,edtUsermobile;
@@ -149,16 +151,6 @@ public class RegistrationActivity extends Activity {
         }
         return true;
     }
-
-    public final Pattern EMAIL_ADDRESS_PATTERN = Pattern.compile(
-            "[a-zA-Z0-9+._%-+]{1,256}" +
-                    "@" +
-                    "[a-zA-Z0-9][a-zA-Z0-9-]{0,64}" +
-                    "(" +
-                    "." +
-                    "[a-zA-Z0-9][a-zA-Z0-9-]{0,25}" +
-                    ")+"
-    );
 
     @Override
     public void onBackPressed() {
