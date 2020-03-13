@@ -10,14 +10,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
 import com.puffizza.Login.LoginActivity;
 import com.puffizza.R;
-import com.puffizza.Utills.utills;
+import com.puffizza.Utills.utils;
 
 public class ProfileFragment extends Fragment {
 
@@ -48,7 +47,7 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        sharedpreferences = getContext().getSharedPreferences(utills.MyPREFERENCES, Context.MODE_PRIVATE);
+        sharedpreferences = getContext().getSharedPreferences(utils.MyPREFERENCES, Context.MODE_PRIVATE);
 
         edtUserfirstname = view.findViewById(R.id.edtUserfirstname);
         edtUserlastname = view.findViewById(R.id.edtUserlastname);
@@ -58,10 +57,10 @@ public class ProfileFragment extends Fragment {
 
         logout_btn = view.findViewById(R.id.logout_btn);
 
-        edtUserfirstname.setText(sharedpreferences.getString(utills.F_Name, ""));
-        edtUserlastname.setText(sharedpreferences.getString(utills.L_Name, ""));
-        edtUseremail.setText(sharedpreferences.getString(utills.Email, ""));
-        edtUsermobile.setText(sharedpreferences.getString(utills.Phone, ""));
+        edtUserfirstname.setText(sharedpreferences.getString(utils.F_Name, ""));
+        edtUserlastname.setText(sharedpreferences.getString(utils.L_Name, ""));
+        edtUseremail.setText(sharedpreferences.getString(utils.Email, ""));
+        edtUsermobile.setText(sharedpreferences.getString(utils.Phone, ""));
 
         btnRegistration.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,11 +73,11 @@ public class ProfileFragment extends Fragment {
                 if (validateLogin(userfirstname, userlastname, useremail, usermobile)) {
                     SharedPreferences.Editor editor = sharedpreferences.edit();
 
-                    editor.putString(utills.ID, "1");
-                    editor.putString(utills.F_Name, userfirstname);
-                    editor.putString(utills.L_Name, userlastname);
-                    editor.putString(utills.Email, useremail);
-                    editor.putString(utills.Phone, usermobile);
+                    editor.putString(utils.ID, "1");
+                    editor.putString(utils.F_Name, userfirstname);
+                    editor.putString(utils.L_Name, userlastname);
+                    editor.putString(utils.Email, useremail);
+                    editor.putString(utils.Phone, usermobile);
                     editor.commit();
 
                     Toast.makeText(getContext(), "Successfully updated profile.", Toast.LENGTH_SHORT).show();
@@ -90,11 +89,11 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.putString(utills.ID, "");
-                editor.putString(utills.F_Name, "");
-                editor.putString(utills.L_Name, "");
-                editor.putString(utills.Phone, "");
-                editor.putString(utills.Email, "");
+                editor.putString(utils.ID, "");
+                editor.putString(utils.F_Name, "");
+                editor.putString(utils.L_Name, "");
+                editor.putString(utils.Phone, "");
+                editor.putString(utils.Email, "");
                 editor.commit();
                 Intent logout = new Intent(getContext(), LoginActivity.class);
                 startActivity(logout);

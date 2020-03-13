@@ -15,7 +15,7 @@ import com.puffizza.Forgot.ForgotActivity;
 import com.puffizza.MainActivity;
 import com.puffizza.R;
 import com.puffizza.Regisrtation.RegistrationActivity;
-import com.puffizza.Utills.utills;
+import com.puffizza.Utills.utils;
 import com.puffizza.retrofit.ApiUtils;
 import com.puffizza.retrofit.UserService;
 
@@ -32,7 +32,7 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        sharedpreferences = getSharedPreferences(utills.MyPREFERENCES, Context.MODE_PRIVATE);
+        sharedpreferences = getSharedPreferences(utils.MyPREFERENCES, Context.MODE_PRIVATE);
 
         edtUsername = (EditText) findViewById(R.id.edtUsername);
         edtPassword = (EditText) findViewById(R.id.edtPassword);
@@ -49,8 +49,8 @@ public class LoginActivity extends Activity {
                 //validate form
                 if (validateLogin(username, password)) {
 
-                    if (sharedpreferences.getString(utills.ID, "").isEmpty() &&
-                            sharedpreferences.getString(utills.ID, "").equalsIgnoreCase("")) {
+                    if (sharedpreferences.getString(utils.ID, "").isEmpty() &&
+                            sharedpreferences.getString(utils.ID, "").equalsIgnoreCase("")) {
                         Toast.makeText(LoginActivity.this, "User Not Register.", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(LoginActivity.this, RegistrationActivity.class);
                         startActivity(intent);

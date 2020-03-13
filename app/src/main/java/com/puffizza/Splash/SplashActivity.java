@@ -21,7 +21,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.puffizza.Login.LoginActivity;
 import com.puffizza.MainActivity;
 import com.puffizza.R;
-import com.puffizza.Utills.utills;
+import com.puffizza.Utills.utils;
 
 
 public class SplashActivity extends Activity {
@@ -36,7 +36,7 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        sharedpreferences = getSharedPreferences(utills.MyPREFERENCES, Context.MODE_PRIVATE);
+        sharedpreferences = getSharedPreferences(utils.MyPREFERENCES, Context.MODE_PRIVATE);
 
         /*handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -55,7 +55,7 @@ public class SplashActivity extends Activity {
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    if (sharedpreferences.getString(utills.ID, "").isEmpty()) {
+                    if (sharedpreferences.getString(utils.ID, "").isEmpty()) {
                         Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                         startActivity(intent);
                         finish();
@@ -103,7 +103,7 @@ public class SplashActivity extends Activity {
                         handler.postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                if (sharedpreferences.getString(utills.ID, "").isEmpty()) {
+                                if (sharedpreferences.getString(utils.ID, "").isEmpty()) {
 //                                if (sharedpreferences.getString(utills.ID, null).equals("1")) {
                                     Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                                     startActivity(intent);

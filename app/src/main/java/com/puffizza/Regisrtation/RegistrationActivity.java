@@ -17,14 +17,13 @@ import androidx.annotation.RequiresApi;
 import com.puffizza.Login.LoginActivity;
 import com.puffizza.MainActivity;
 import com.puffizza.R;
-import com.puffizza.Utills.utills;
+import com.puffizza.Utills.utils;
 import com.puffizza.retrofit.ApiUtils;
 import com.puffizza.retrofit.UserService;
 
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.regex.Pattern;
 
-import static com.puffizza.Utills.utills.EMAIL_ADDRESS_PATTERN;
+import static com.puffizza.Utills.utils.EMAIL_ADDRESS_PATTERN;
 
 public class RegistrationActivity extends Activity {
 
@@ -41,7 +40,7 @@ public class RegistrationActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        sharedpreferences = getSharedPreferences(utills.MyPREFERENCES, Context.MODE_PRIVATE);
+        sharedpreferences = getSharedPreferences(utils.MyPREFERENCES, Context.MODE_PRIVATE);
 
         edtUserfirstname = (EditText) findViewById(R.id.edtUserfirstname);
         edtUserlastname = (EditText) findViewById(R.id.edtUserlastname);
@@ -70,11 +69,11 @@ public class RegistrationActivity extends Activity {
 
                     int random = ThreadLocalRandom.current().nextInt(min, max);
 
-                    editor.putString(utills.ID, String.valueOf(random));
-                    editor.putString(utills.F_Name, Userfirstname);
-                    editor.putString(utills.L_Name, Userlastname);
-                    editor.putString(utills.Phone, Useremobile);
-                    editor.putString(utills.Email, Useremail);
+                    editor.putString(utils.ID, String.valueOf(random));
+                    editor.putString(utils.F_Name, Userfirstname);
+                    editor.putString(utils.L_Name, Userlastname);
+                    editor.putString(utils.Phone, Useremobile);
+                    editor.putString(utils.Email, Useremail);
                     editor.commit();
                     //do login
 //                    doLogin(username, password);

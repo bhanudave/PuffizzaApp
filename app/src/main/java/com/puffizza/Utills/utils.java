@@ -2,7 +2,7 @@ package com.puffizza.Utills;
 
 import java.util.regex.Pattern;
 
-public class utills {
+public class utils {
 
     public static final String MyPREFERENCES = "Puffizza" ;
     public static final String ID = "Id" ;

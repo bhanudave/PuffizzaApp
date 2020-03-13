@@ -1,7 +1,6 @@
 package com.puffizza;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,14 +12,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.PopupMenu;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.puffizza.Login.LoginActivity;
-import com.puffizza.Utills.utills;
+import com.puffizza.Utills.utils;
 import com.puffizza.fragment.AboutusFragment;
 import com.puffizza.fragment.CartFragment;
 import com.puffizza.fragment.HomeFragment;
@@ -42,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        sharedpreferences = getSharedPreferences(utills.MyPREFERENCES, Context.MODE_PRIVATE);
+        sharedpreferences = getSharedPreferences(utils.MyPREFERENCES, Context.MODE_PRIVATE);
 
-        Log.e("ID", sharedpreferences.getString(utills.ID, ""));
-        Log.e("NAME", sharedpreferences.getString(utills.F_Name, ""));
+        Log.e("ID", sharedpreferences.getString(utils.ID, ""));
+        Log.e("NAME", sharedpreferences.getString(utils.F_Name, ""));
 
         toolbar = getSupportActionBar();
 
